@@ -16,5 +16,19 @@ function enqueue_scripts() {
         '1.0',
         true
     );
+    wp_enqueue_script(
+        'reviews-stagger-effect',
+        get_template_directory_uri() . '/assets/js/reviews-stagger-effect.js',
+        array(),
+        '1.0',
+        true
+    );
+    wp_enqueue_script(
+        'services-lightbox-effect',
+        get_template_directory_uri() . '/assets/js/services-lightbox.js',
+        array(),
+        '1.0',
+        true
+    );
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_scripts' );
